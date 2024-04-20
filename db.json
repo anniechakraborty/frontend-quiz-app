@@ -1,0 +1,52 @@
+{
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the difference between the span and div elements?",
+        "answer": "Span is an inline element and div is a block level element",
+        "opt1" : "Span can contain only texts and div can contain text and any other elements",
+        "opt2" : "Span is a block element and div is an inline element",
+        "opt3" : "Span is an inline element and div is a block level element",
+        "opt4" : "We can have many span elements but only one div element in a web page",
+        "tag" : "HTML"
+      },
+      {
+        "id": 2,
+        "question": "Which of these colour contrasts defines the minimum WCAG 2.1 level AA requirement for normal text?",
+        "answer": "3:1",
+        "opt1": "4.5:1",
+        "opt2": "3:1",
+        "opt3": "2.5:1",
+        "opt4": "5:1",
+        "tag" : "Accessibility"
+      },
+      {
+        "id": 3,
+        "question": "Deletes data when the browser tab is closed",
+        "answer": "Session Storage",
+        "opt1": "Local Storage",
+        "opt2": "Session Storage",
+        "tag" : "html"
+      },
+      {
+        "id": 4,
+        "question": "This hides the element but still affects the layout",
+        "answer": "visibility:hidden;",
+        "opt1": "display: none;",
+        "opt2": "visibility:hidden;",
+        "opt3": "color: transparent;",
+        "opt4": "display: hidden;",
+        "tag": "CSS"
+      },
+      {
+        "id": 5,
+        "question": "Select the incorrect display value",
+        "answer": "offset",
+        "opt1": "flex",
+        "opt2": "inline-block",
+        "opt3": "none",
+        "opt4": "offset",
+        "tag" : "CSS"
+      }
+    ]
+  }
