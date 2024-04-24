@@ -1,8 +1,20 @@
 <div class="whole_page">
     <!-- send icon and text here -->
-    <app-header></app-header>
+    <!-- <app-header></app-header> -->
+    <p>{{selectedQuestion.tag}}</p>
+
     <div class="content">
-        <app-text></app-text>
-        <app-option-list></app-option-list>
+        <div class="question">
+            {{selectedQuestion.question}}
+        </div>
+        <div class="options">
+            <ul>
+                <li *ngFor="let option of options" class="optionList" (click)="userAnswer()">
+                  <!-- <fa-icon [icon]="faA"></fa-icon>  -->
+                  {{ option }}
+                </li>
+            </ul>
+            <app-button btnText="Submit!" btnColour="#A529F5" (btnClick)="getNextQuestion()"></app-button>
+        </div>
     </div>
 </div>

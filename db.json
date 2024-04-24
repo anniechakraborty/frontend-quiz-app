@@ -26,6 +26,8 @@
             "answer": "Session Storage",
             "opt1": "Local Storage",
             "opt2": "Session Storage",
+            "opt3": "Async Storage",
+            "opt4": "None of these",
             "tag": "html"
         },
         {

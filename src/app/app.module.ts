@@ -3,22 +3,24 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { PageStructureComponent } from './components/page-structure/page-structure.component';
-import { TextComponent } from './components/text/text.component';
-import { OptionListComponent } from './components/option-list/option-list.component';
+// import { TextComponent } from './components/text/text.component';
+// import { OptionListComponent } from './components/option-list/option-list.component';
 import { ButtonComponent } from './components/button/button.component';
-import { HeaderComponent } from './components/header/header.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+// import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PageStructureComponent,
-    TextComponent,
-    OptionListComponent,
+    // TextComponent,
+    // OptionListComponent,
     ButtonComponent,
-    HeaderComponent
+    // HeaderComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
