@@ -1,4 +1,4 @@
-<div class="whole_page">
+<div class="whole_page" *ngIf="questionCount < 5">
     <!-- send icon and text here -->
     <!-- <app-header></app-header> -->
     <p>{{selectedQuestion.tag}}</p>
@@ -9,8 +9,8 @@
         </div>
         <div class="options">
             <ul>
-                <li *ngFor="let option of options" class="optionList" (click)="userAnswer(option)">
-                    <!-- <fa-icon [icon]="faA"></fa-icon>  -->
+                <li *ngFor="let option of options" class="optionList"
+                    [ngClass]="{'selected' : selectedOption === option}" (click)="userAnswer(option)">
                     {{ option }}
                 </li>
             </ul>
@@ -19,4 +19,11 @@
             </a>
         </div>
     </div>
+</div>
+<div class="score" *ngIf="questionCount >= 5">
+    Score : {{ score}}
+    Play again 
+    <a class="btn submit_button" routerLink="/">
+        Home Page
+    </a>
 </div>

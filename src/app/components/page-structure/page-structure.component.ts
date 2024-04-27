@@ -17,6 +17,7 @@ export class PageStructureComponent implements OnInit {
   questionCount: number = 0;
   options: any = {};
   score: number = 0;
+  selectedOption: string = '';
   // faA = faArrowAltCircleRight;
 
   // To use a service, we first bring it as a provider to the constructor
@@ -53,6 +54,9 @@ export class PageStructureComponent implements OnInit {
   }
 
 
+  /**
+   * gets the next question from the list
+   */
   getNextQuestion() {
     if (this.questionCount < 5) {
       console.log('Getting next question!!');
@@ -61,17 +65,20 @@ export class PageStructureComponent implements OnInit {
     }
     else {
       console.log('Getting score : ', this.score);
+      // TODO : route to score page / display the score
     }
   }
 
-  userAnswer(answer: any) {
+  userAnswer(answer: string) {
     console.log('User answer : ', answer);
-    /* TODO: change the style to reflected selected answer 
-     *  check if this matches with the answer then update score
-     * */
+    this.selectedOption = answer;
 
     if (answer === this.selectedQuestion.answer) {
       this.score += 1;
+      console.log('Score : ', this.score);
+    }
+    else{
+      console.log('Wrong answer! ');
     }
 
   }

@@ -7,7 +7,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { PageStructureComponent } from './components/page-structure/page-structure.component';
 import { WelcomePageComponent } from './components/welcome-page/welcome-page.component';
-import { ScorePageComponent } from './components/score-page/score-page.component';
 
 const routes: Routes = [
   {
@@ -17,10 +16,6 @@ const routes: Routes = [
   {
     path: 'quiz',
     component: PageStructureComponent
-  },
-  {
-    path: 'scores',
-    component: ScorePageComponent
   }
 ];
 
@@ -28,8 +23,7 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     PageStructureComponent,
-    WelcomePageComponent,
-    ScorePageComponent
+    WelcomePageComponent
   ],
   imports: [
     BrowserModule,
