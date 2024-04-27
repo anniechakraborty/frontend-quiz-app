@@ -1,26 +1,41 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { HttpClientModule } from '@angular/common/http';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { PageStructureComponent } from './components/page-structure/page-structure.component';
-// import { TextComponent } from './components/text/text.component';
-// import { OptionListComponent } from './components/option-list/option-list.component';
-import { ButtonComponent } from './components/button/button.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-// import { HeaderComponent } from './components/header/header.component';
+import { WelcomePageComponent } from './components/welcome-page/welcome-page.component';
+import { ScorePageComponent } from './components/score-page/score-page.component';
+
+const routes: Routes = [
+  {
+    path: '',
+    component: WelcomePageComponent,
+  },
+  {
+    path: 'quiz',
+    component: PageStructureComponent
+  },
+  {
+    path: 'scores',
+    component: ScorePageComponent
+  }
+];
 
 @NgModule({
   declarations: [
     AppComponent,
     PageStructureComponent,
-    // TextComponent,
-    // OptionListComponent,
-    ButtonComponent,
-    // HeaderComponent
+    WelcomePageComponent,
+    ScorePageComponent
   ],
   imports: [
     BrowserModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    RouterModule.forRoot(routes),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -9,12 +9,14 @@
         </div>
         <div class="options">
             <ul>
-                <li *ngFor="let option of options" class="optionList" (click)="userAnswer()">
-                  <!-- <fa-icon [icon]="faA"></fa-icon>  -->
-                  {{ option }}
+                <li *ngFor="let option of options" class="optionList" (click)="userAnswer(option)">
+                    <!-- <fa-icon [icon]="faA"></fa-icon>  -->
+                    {{ option }}
                 </li>
             </ul>
-            <app-button btnText="Submit!" btnColour="#A529F5" (btnClick)="getNextQuestion()"></app-button>
+            <a class="btn submit_button" (click)="getNextQuestion()">
+                Submit!
+            </a>
         </div>
     </div>
 </div>
