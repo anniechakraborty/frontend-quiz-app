@@ -18,6 +18,8 @@ export class PageStructureComponent implements OnInit {
   options: any = {};
   score: number = 0;
   selectedOption: string = '';
+
+  cursor : any;
   // faA = faArrowAltCircleRight;
 
   // To use a service, we first bring it as a provider to the constructor
@@ -34,6 +36,11 @@ export class PageStructureComponent implements OnInit {
       this.questionCount += 1;
       console.log("Question Count: " , this.questionCount);
     });
+    this.cursor = document.querySelector('.cursor')
+    document.addEventListener('mousemove', (e)=>{
+      this.cursor.style.left = e.clientX + 'px';
+      this.cursor.style.top = e.clientY + 'px';
+    })
   }
 
   /**

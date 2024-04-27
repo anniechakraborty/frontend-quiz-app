@@ -87,6 +87,18 @@
 
 }
 
+.cursor{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    transition: 0.1s;
+    transform: translate(-30%, -30%);
+    pointer-events: none;
+    mix-blend-mode: difference;
+}
+
 .score {
     padding: 1em;
     font-family: "Poppins", sans-serif;
