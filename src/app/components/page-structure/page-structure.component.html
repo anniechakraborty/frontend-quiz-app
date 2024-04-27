@@ -1,4 +1,4 @@
-<div class="whole_page" *ngIf="questionCount < 5">
+<div class="whole_page" *ngIf="questionCount <= 5">
     <p class="q_tag">{{selectedQuestion.tag}}</p>
 
     <div class="content">
@@ -23,9 +23,9 @@
         </div>
     </div>
 </div>
-<div class="score" *ngIf="questionCount >= 5">
+<div class="score" *ngIf="questionCount > 5">
     <div class="text">
-        Quiz Completed!
+        Quiz Completed! <br/>
         <span>You scored ... </span>
     </div>
     <div class="score_board">

@@ -50,13 +50,17 @@
         }
     }
 
+    ul{
+        padding: 0;
+    }
+
     .options {
         width: 100%;
         font-family: "Poppins", sans-serif;
         font-weight: 400;
         display: flex;
         flex-direction: column;
-        align-items: end;
+        // align-items: end;
 
         .optionList {
             list-style: none;
@@ -104,6 +108,29 @@
         align-items: center;
         p{
             margin-bottom: 0;
+        }
+    }
+}
+
+@media screen and (max-width : 1000px) {
+    .content{
+        flex-direction: column;
+        width: 100%;
+
+        .options {
+            .optionList{
+                width: 90%;
+                text-wrap: wrap;
+            }
+            .submit_button{
+                width: 90%;
+            }
+        }
+    }
+
+    .score {
+        .score_board{
+            width: 95%;
         }
     }
 }
