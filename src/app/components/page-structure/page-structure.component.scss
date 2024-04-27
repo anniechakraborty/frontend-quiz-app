@@ -1,19 +1,109 @@
-.optionList{
-    color: black;
-    padding: 1em;
-    margin: 0.5em 0;
-    border: 1px solid black;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.whole_page{
+.whole_page,
+.score {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: space-evenly;
+    background-color: #313E51;
 }
 
-.selected {
-    border: 1px solid red;
+.q_tag {
+    background-color: #3C4C67;
+    color: white;
+    padding: 1em;
+    border-radius: 10px;
+    width: 30%;
+    margin-left: 1em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.content {
+    margin: 0 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    width: 90%;
+
+    .question {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        width: 80%;
+        height: 50%;
+        flex-wrap: wrap;
+
+        .q_count {
+            color: #626E85;
+            font-style: italic;
+        }
+
+        .q {
+            color: white;
+        }
+    }
+
+    .options {
+        width: 100%;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+
+        .optionList {
+            list-style: none;
+            background-color: #3C4C67;
+            color: white;
+            padding: 1em;
+            margin: 0.5em 0;
+            border-radius: 10px;
+            width: 500px;
+            text-wrap: wrap;
+            cursor: pointer;
+        }
+
+        .selected {
+            border: 1px solid white;
+            // transition: border 0.3s ease;
+        }
+    }
+
+}
+
+.score {
+    padding: 1em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: white;
+
+    .text {
+        font-size: 30px;
+        span {
+            font-weight: 300;
+        }
+    }
+
+    .score_board {
+        background-color: #3C4C67;
+        padding: 1em;
+        border-radius: 10px;
+        width: 40%;
+        height: 40%;
+        font-style: italic;
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p{
+            margin-bottom: 0;
+        }
+    }
 }

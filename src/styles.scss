@@ -1,5 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
-.submit_button{
+.submit_button {
     background-color: #A529F5;
     color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+.btn:hover {
+    color: white !important;
+    background-color: #626E85;
 }

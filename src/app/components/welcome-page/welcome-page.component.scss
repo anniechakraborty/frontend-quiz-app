@@ -1,0 +1,27 @@
+.welcome_page{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+    background-color: #313E51;
+
+    padding: 1em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: white;
+
+    .heading {
+        font-size: 30px;
+        span {
+            font-weight: 300;
+        }
+    }
+
+    .desc{
+        width: 60%;
+        text-wrap: wrap;
+    }
+}

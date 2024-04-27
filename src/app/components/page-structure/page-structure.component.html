@@ -1,11 +1,14 @@
 <div class="whole_page" *ngIf="questionCount < 5">
-    <!-- send icon and text here -->
-    <!-- <app-header></app-header> -->
-    <p>{{selectedQuestion.tag}}</p>
+    <p class="q_tag">{{selectedQuestion.tag}}</p>
 
     <div class="content">
         <div class="question">
-            {{selectedQuestion.question}}
+            <div class="q_count">
+                Question {{ questionCount }} of 5
+            </div>
+            <div class="q">
+                {{selectedQuestion.question}}
+            </div>
         </div>
         <div class="options">
             <ul>
@@ -21,8 +24,15 @@
     </div>
 </div>
 <div class="score" *ngIf="questionCount >= 5">
-    Score : {{ score}}
-    Play again 
+    <div class="text">
+        Quiz Completed!
+        <span>You scored ... </span>
+    </div>
+    <div class="score_board">
+        <p>
+            {{ score }} / 5
+        </p>
+    </div>
     <a class="btn submit_button" routerLink="/">
         Home Page
     </a>
