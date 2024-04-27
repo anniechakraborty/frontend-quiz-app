@@ -69,9 +69,14 @@
             padding: 1em;
             margin: 0.5em 0;
             border-radius: 10px;
-            width: 500px;
+            // width: 500px;
             text-wrap: wrap;
             cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .optionList:hover{
+            background-color: #465672;
         }
 
         .selected {

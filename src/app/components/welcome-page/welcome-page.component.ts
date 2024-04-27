@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -6,11 +6,21 @@ import { Router } from '@angular/router';
   templateUrl: './welcome-page.component.html',
   styleUrls: ['./welcome-page.component.scss']
 })
-export class WelcomePageComponent {
+export class WelcomePageComponent implements OnInit{
+
+  cursor : any;
 
   constructor(
     private router: Router
   ){}
+
+  ngOnInit(): void {
+    this.cursor = document.querySelector('.cursor')
+    document.addEventListener('mousemove', (e)=>{
+      this.cursor.style.left = e.clientX + 'px';
+      this.cursor.style.top = e.clientY + 'px';
+    })
+  }
 
   start(){
     this.router.navigate(['/quiz']);

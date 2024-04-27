@@ -27,6 +27,40 @@
         font-size: 20px;
         font-weight: 300;
     }
+
+    .start_btn {
+        background-color: #A529F5;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 1em;
+        text-decoration: none;
+        padding: 8px 12px;
+        letter-spacing: 0.1em;
+        transition: 0.5s;
+        border-radius: 6px;
+    }
+
+    .start_btn:hover {
+        letter-spacing: 0.25em;
+        // font-size: 1.2em;
+    }
+
+    .cursor{
+        position: fixed;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: white;
+        transition: 0.2s;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+        mix-blend-mode: difference;
+    }
+
+    .heading:hover ~ .cursor, .desc:hover ~ .cursor{
+        transform: scale(6);
+    }
 }
 
 @media screen and (max-width : 1000px) {
