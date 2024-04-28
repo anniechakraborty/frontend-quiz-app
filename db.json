@@ -199,6 +199,56 @@
             "opt3": "Specifies that the script should be executed after the page has finished loading",
             "opt4": "Specifies that the script should be executed asynchronously",
             "tag": "HTML"
+        },
+        {
+            "id": 21,
+            "question": "Which CSS property is used to specify the duration of an animation?",
+            "answer": "animation-duration",
+            "opt1": "animation-duration",
+            "opt2": "transition-duration",
+            "opt3": "animation-time",
+            "opt4": "transition-time",
+            "tag": "CSS"
+        },
+        {
+            "id": 22,
+            "question": "What is the keyframe rule used for in CSS animations?",
+            "answer": "Defining the intermediate steps in an animation sequence",
+            "opt1": "Specifying the start and end points of an animation",
+            "opt2": "Setting the duration of an animation",
+            "opt3": "Defining the intermediate steps in an animation sequence",
+            "opt4": "Controlling the timing function of an animation",
+            "tag": "CSS"
+        },
+        {
+            "id": 23,
+            "question": "Which of the following is NOT a valid timing function in CSS animations?",
+            "answer": "bounce",
+            "opt1": "ease",
+            "opt2": "ease-in",
+            "opt3": "linear",
+            "opt4": "bounce",
+            "tag": "CSS"
+        },
+        {
+            "id": 24,
+            "question": "What does the 'animation-fill-mode' property in CSS animations control?",
+            "answer": "The styles applied to an element before and after the animation",
+            "opt1": "The direction of the animation",
+            "opt2": "The timing function of the animation",
+            "opt3": "The styles applied to an element before and after the animation",
+            "opt4": "The duration of the animation",
+            "tag": "CSS"
+        },
+        {
+            "id": 25,
+            "question": "How can you create a looping animation in CSS?",
+            "answer": "By setting the 'animation-iteration-count' property to 'infinite'",
+            "opt1": "By using the 'loop' keyword in the 'animation' property",
+            "opt2": "By setting the 'animation-repeat' property to 'true'",
+            "opt3": "By setting the 'animation-iteration-count' property to 'infinite'",
+            "opt4": "By using the 'repeat' keyword in the 'animation' property",
+            "tag": "CSS"
         }
     ]
 }
